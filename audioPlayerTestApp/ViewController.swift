@@ -110,5 +110,4 @@ class ViewController: UIViewController {
             audioDurationProgressLabel.text = "\(Int(min)):\(Int(sec))"
         }
     }
-    
 }
