@@ -12,6 +12,7 @@
 		CC87E8F0220B4BD3003D20E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC87E8EE220B4BD3003D20E5 /* Main.storyboard */; };
 		CC87E8F2220B4BD6003D20E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC87E8F1220B4BD6003D20E5 /* Assets.xcassets */; };
 		CC87E8F5220B4BD6003D20E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC87E8F3220B4BD6003D20E5 /* LaunchScreen.storyboard */; };
+		CC87E8FF220B8BA5003D20E5 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CC87E8FE220B8BA5003D20E5 /* music.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CC87E8F1220B4BD6003D20E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC87E8F4220B4BD6003D20E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC87E8F6220B4BD6003D20E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC87E8FE220B8BA5003D20E5 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = music.mp3; path = ../../../../Downloads/music.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				CC87E8EC220B4BD3003D20E5 /* ViewController.swift */,
 				CC87E8EE220B4BD3003D20E5 /* Main.storyboard */,
 				CC87E8F1220B4BD6003D20E5 /* Assets.xcassets */,
+				CC87E8FE220B8BA5003D20E5 /* music.mp3 */,
 				CC87E8F3220B4BD6003D20E5 /* LaunchScreen.storyboard */,
 				CC87E8F6220B4BD6003D20E5 /* Info.plist */,
 			);
@@ -124,6 +127,7 @@
 			files = (
 				CC87E8F5220B4BD6003D20E5 /* LaunchScreen.storyboard in Resources */,
 				CC87E8F2220B4BD6003D20E5 /* Assets.xcassets in Resources */,
+				CC87E8FF220B8BA5003D20E5 /* music.mp3 in Resources */,
 				CC87E8F0220B4BD3003D20E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

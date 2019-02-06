@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  audioPlayerTestApp
 //
-//  Created by coco j on 2019/02/07.
+//  Created by amaocha on 2019/02/07.
 //  Copyright © 2019 coco j. All rights reserved.
 //
 
