@@ -53,14 +53,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //AvAudioPlayer呼び出し
+        audioPlayerDif()
         
         //再生スライドバー用のタイマー。１秒ごとにsliderCount()を実行する
         let sliderTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(slideCount(_:)), userInfo: nil, repeats: true)
         //再生時間更新用のタイマー。0.1秒ごとにtimeCount()を実行する
         let durationTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(timeCount(_:)), userInfo: nil, repeats: true)
         audioDurationProgressLabel.text = "00:00"
-        //AvAudioPlayer呼び出し
-        audioPlayerDif()
+        
     }
     
     // 音楽コントローラ AVAudioPlayerを定義(変数定義、定義実施、クリア）

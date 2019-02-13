@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,109 +15,161 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="audioPlayerTestApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dxW-il-Zai">
-                                <rect key="frame" x="79" y="375" width="217" height="31"/>
-                                <connections>
-                                    <action selector="volumeController:" destination="BYZ-38-t0r" eventType="valueChanged" id="AfG-Jr-0Ge"/>
-                                </connections>
-                            </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="E68-ie-LtZ">
-                                <rect key="frame" x="68" y="482" width="245" height="31"/>
-                                <color key="tintColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <action selector="playSliderController:" destination="BYZ-38-t0r" eventType="valueChanged" id="fXI-c2-WJa"/>
-                                </connections>
-                            </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="volume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R83-ST-nsu">
-                                <rect key="frame" x="81" y="343" width="90" height="20"/>
-                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="曲タイトル" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPt-oH-UmA">
-                                <rect key="frame" x="21" y="454.5" width="101" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syc-Pf-QJE">
-                                <rect key="frame" x="10" y="487" width="52" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eg-QK-Pko">
-                                <rect key="frame" x="319" y="487.5" width="46" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Player App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13j-PC-EDD">
-                                <rect key="frame" x="63" y="120.5" width="249" height="40"/>
-                                <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="40"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="54" translatesAutoresizingMaskIntoConstraints="NO" id="ymG-99-5rM">
-                                <rect key="frame" x="45" y="537" width="286" height="36"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="byb-a5-xzM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="431"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCk-vp-wwu">
-                                        <rect key="frame" x="0.0" y="0.0" width="70" height="36"/>
-                                        <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="24"/>
-                                        <state key="normal" title="Pause"/>
-                                        <connections>
-                                            <action selector="pauseButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iwh-u5-xwY"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIg-wL-oP3">
-                                        <rect key="frame" x="124" y="0.0" width="52" height="36"/>
-                                        <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="24"/>
-                                        <state key="normal" title="Play"/>
-                                        <connections>
-                                            <action selector="playButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ke2-Y6-WBF"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cl-LU-zYJ">
-                                        <rect key="frame" x="230" y="0.0" width="56" height="36"/>
-                                        <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="24"/>
-                                        <state key="normal" title="Stop"/>
-                                        <connections>
-                                            <action selector="stopButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EqN-DM-LHj"/>
-                                        </connections>
-                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Player App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13j-PC-EDD">
+                                        <rect key="frame" x="82.5" y="195.5" width="249" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="2H4-Ij-L6x"/>
+                                            <constraint firstAttribute="width" constant="249" id="Jk0-Qj-ZQn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="40"/>
+                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
-                            </stackView>
+                                <constraints>
+                                    <constraint firstItem="13j-PC-EDD" firstAttribute="centerX" secondItem="byb-a5-xzM" secondAttribute="centerX" id="FU2-tP-Qdc"/>
+                                    <constraint firstItem="13j-PC-EDD" firstAttribute="centerY" secondItem="byb-a5-xzM" secondAttribute="centerY" id="Gs7-5r-0Ki"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X9T-xi-KM3">
+                                <rect key="frame" x="0.0" y="431" width="414" height="431"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zK9-jC-hUT">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="215.5"/>
+                                        <subviews>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dxW-il-Zai">
+                                                <rect key="frame" x="63" y="53.5" width="288" height="109.5"/>
+                                                <connections>
+                                                    <action selector="volumeController:" destination="BYZ-38-t0r" eventType="valueChanged" id="AfG-Jr-0Ge"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="volume" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R83-ST-nsu">
+                                                <rect key="frame" x="176.5" y="10" width="61.5" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="BX5-5y-cIF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="dxW-il-Zai" firstAttribute="top" secondItem="R83-ST-nsu" secondAttribute="bottom" constant="8.5" id="JsY-Xr-O4y"/>
+                                            <constraint firstAttribute="trailing" secondItem="dxW-il-Zai" secondAttribute="trailing" constant="65" id="M51-tI-i08"/>
+                                            <constraint firstItem="R83-ST-nsu" firstAttribute="centerX" secondItem="zK9-jC-hUT" secondAttribute="centerX" id="cXr-ct-OaM"/>
+                                            <constraint firstItem="dxW-il-Zai" firstAttribute="centerX" secondItem="zK9-jC-hUT" secondAttribute="centerX" id="dV1-hO-wNg"/>
+                                            <constraint firstItem="R83-ST-nsu" firstAttribute="top" secondItem="zK9-jC-hUT" secondAttribute="top" constant="10" id="rmT-xF-cRm"/>
+                                            <constraint firstItem="dxW-il-Zai" firstAttribute="centerY" secondItem="zK9-jC-hUT" secondAttribute="centerY" id="uvL-ma-Ska"/>
+                                            <constraint firstItem="dxW-il-Zai" firstAttribute="leading" secondItem="zK9-jC-hUT" secondAttribute="leading" constant="65" id="y6n-7j-mV0"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PAj-Ry-JG3">
+                                        <rect key="frame" x="0.0" y="215.5" width="414" height="215.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="曲タイトル" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPt-oH-UmA">
+                                                <rect key="frame" x="8" y="0.0" width="140" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="E68-ie-LtZ">
+                                                <rect key="frame" x="65" y="25.5" width="284" height="31"/>
+                                                <color key="tintColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="playSliderController:" destination="BYZ-38-t0r" eventType="valueChanged" id="fXI-c2-WJa"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syc-Pf-QJE">
+                                                <rect key="frame" x="8" y="23" width="46" height="36.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eg-QK-Pko">
+                                                <rect key="frame" x="360" y="23" width="46" height="36.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="54" translatesAutoresizingMaskIntoConstraints="NO" id="ymG-99-5rM">
+                                                <rect key="frame" x="61" y="78.5" width="286" height="85"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCk-vp-wwu">
+                                                        <rect key="frame" x="0.0" y="0.0" width="70" height="85"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="24"/>
+                                                        <state key="normal" title="Pause"/>
+                                                        <connections>
+                                                            <action selector="pauseButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iwh-u5-xwY"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIg-wL-oP3">
+                                                        <rect key="frame" x="124" y="0.0" width="52" height="85"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="24"/>
+                                                        <state key="normal" title="Play"/>
+                                                        <connections>
+                                                            <action selector="playButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ke2-Y6-WBF"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cl-LU-zYJ">
+                                                        <rect key="frame" x="230" y="0.0" width="56" height="85"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="24"/>
+                                                        <state key="normal" title="Stop"/>
+                                                        <connections>
+                                                            <action selector="stopButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EqN-DM-LHj"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="9eg-QK-Pko" firstAttribute="top" secondItem="PAj-Ry-JG3" secondAttribute="top" constant="23" id="3Nz-Hb-RLg"/>
+                                            <constraint firstItem="E68-ie-LtZ" firstAttribute="leading" secondItem="Syc-Pf-QJE" secondAttribute="trailing" constant="13" id="DD6-Zr-dkR"/>
+                                            <constraint firstItem="ymG-99-5rM" firstAttribute="top" secondItem="Syc-Pf-QJE" secondAttribute="bottom" constant="19" id="Efx-gA-sS1"/>
+                                            <constraint firstItem="9eg-QK-Pko" firstAttribute="leading" secondItem="E68-ie-LtZ" secondAttribute="trailing" constant="13" id="IAy-wS-XaN"/>
+                                            <constraint firstAttribute="trailing" secondItem="yPt-oH-UmA" secondAttribute="trailing" constant="266" id="KBf-cs-d0N"/>
+                                            <constraint firstItem="Syc-Pf-QJE" firstAttribute="top" secondItem="yPt-oH-UmA" secondAttribute="bottom" constant="2.5" id="L9d-sF-0cx"/>
+                                            <constraint firstAttribute="trailing" secondItem="ymG-99-5rM" secondAttribute="trailing" constant="67" id="U2Y-93-MO4"/>
+                                            <constraint firstItem="Syc-Pf-QJE" firstAttribute="leading" secondItem="PAj-Ry-JG3" secondAttribute="leading" constant="8" id="Z9v-pn-QaK"/>
+                                            <constraint firstItem="yPt-oH-UmA" firstAttribute="leading" secondItem="PAj-Ry-JG3" secondAttribute="leading" constant="8" id="euf-8E-AuO"/>
+                                            <constraint firstAttribute="trailing" secondItem="9eg-QK-Pko" secondAttribute="trailing" constant="8" id="fxm-7g-Pv3"/>
+                                            <constraint firstItem="ymG-99-5rM" firstAttribute="top" secondItem="E68-ie-LtZ" secondAttribute="bottom" constant="23" id="p6O-V9-PfQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="ymG-99-5rM" secondAttribute="bottom" constant="52" id="vf4-E5-d9L"/>
+                                            <constraint firstItem="ymG-99-5rM" firstAttribute="leading" secondItem="PAj-Ry-JG3" secondAttribute="leading" constant="61" id="wXF-Y4-cCV"/>
+                                            <constraint firstItem="E68-ie-LtZ" firstAttribute="top" secondItem="yPt-oH-UmA" secondAttribute="bottom" constant="5" id="xaM-xl-jQd"/>
+                                            <constraint firstItem="yPt-oH-UmA" firstAttribute="top" secondItem="PAj-Ry-JG3" secondAttribute="top" id="xka-bI-Crs"/>
+                                            <constraint firstItem="ymG-99-5rM" firstAttribute="top" secondItem="9eg-QK-Pko" secondAttribute="bottom" constant="19" id="zrn-xT-z36"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="zK9-jC-hUT" secondAttribute="trailing" id="IW1-Eq-sGg"/>
+                                    <constraint firstAttribute="trailing" secondItem="PAj-Ry-JG3" secondAttribute="trailing" id="dDQ-jR-GOR"/>
+                                    <constraint firstItem="zK9-jC-hUT" firstAttribute="top" secondItem="X9T-xi-KM3" secondAttribute="top" id="eQj-Bu-IIs"/>
+                                    <constraint firstItem="zK9-jC-hUT" firstAttribute="leading" secondItem="X9T-xi-KM3" secondAttribute="leading" id="mLC-JL-fck"/>
+                                    <constraint firstItem="PAj-Ry-JG3" firstAttribute="leading" secondItem="X9T-xi-KM3" secondAttribute="leading" id="o28-hi-1r6"/>
+                                    <constraint firstAttribute="bottom" secondItem="PAj-Ry-JG3" secondAttribute="bottom" id="omW-wZ-hBM"/>
+                                    <constraint firstItem="PAj-Ry-JG3" firstAttribute="top" secondItem="zK9-jC-hUT" secondAttribute="bottom" id="omr-QF-1UT"/>
+                                    <constraint firstItem="PAj-Ry-JG3" firstAttribute="height" secondItem="zK9-jC-hUT" secondAttribute="height" id="vnq-Kg-G9X"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.89142221212387085" blue="0.91763967275619507" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ymG-99-5rM" firstAttribute="top" secondItem="Syc-Pf-QJE" secondAttribute="bottom" constant="29" id="1iy-jP-CrW"/>
-                            <constraint firstItem="ymG-99-5rM" firstAttribute="top" secondItem="9eg-QK-Pko" secondAttribute="bottom" constant="29" id="2EA-77-n0h"/>
-                            <constraint firstItem="yPt-oH-UmA" firstAttribute="top" secondItem="dxW-il-Zai" secondAttribute="bottom" constant="49.5" id="2cG-1R-Wyk"/>
-                            <constraint firstItem="E68-ie-LtZ" firstAttribute="top" secondItem="yPt-oH-UmA" secondAttribute="bottom" constant="7" id="6CC-sc-DDi"/>
-                            <constraint firstItem="ymG-99-5rM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="7PZ-F3-irZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R83-ST-nsu" secondAttribute="trailing" constant="204" id="9j3-KZ-YhS"/>
-                            <constraint firstItem="R83-ST-nsu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="81" id="9wa-53-Lhc"/>
-                            <constraint firstItem="Syc-Pf-QJE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="CcK-pB-0ry"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yPt-oH-UmA" secondAttribute="trailing" constant="253" id="Cw4-p2-Jmz"/>
-                            <constraint firstItem="dxW-il-Zai" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="81" id="GHu-X3-qDa"/>
-                            <constraint firstItem="ymG-99-5rM" firstAttribute="top" secondItem="E68-ie-LtZ" secondAttribute="bottom" constant="25" id="I9L-94-Top"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dxW-il-Zai" secondAttribute="trailing" constant="81" id="K29-KK-aTj"/>
-                            <constraint firstItem="9eg-QK-Pko" firstAttribute="top" secondItem="13j-PC-EDD" secondAttribute="bottom" constant="327" id="L4f-Rn-gUN"/>
-                            <constraint firstItem="13j-PC-EDD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100.5" id="RzV-OP-BdT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ymG-99-5rM" secondAttribute="trailing" constant="44" id="UFo-ma-0ez"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="13j-PC-EDD" secondAttribute="trailing" constant="63" id="YfB-mV-9Tv"/>
-                            <constraint firstItem="R83-ST-nsu" firstAttribute="top" secondItem="13j-PC-EDD" secondAttribute="bottom" constant="182.5" id="aYq-S4-j8Z"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Syc-Pf-QJE" secondAttribute="trailing" constant="313" id="agQ-QF-YWb"/>
-                            <constraint firstItem="9eg-QK-Pko" firstAttribute="leading" secondItem="E68-ie-LtZ" secondAttribute="trailing" constant="8" id="eQu-9R-0Rt"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9eg-QK-Pko" secondAttribute="trailing" constant="10" id="eW3-YC-O7u"/>
-                            <constraint firstItem="yPt-oH-UmA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="21" id="gvC-Hf-blX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ymG-99-5rM" secondAttribute="bottom" constant="94" id="oi6-Da-ZNw"/>
-                            <constraint firstItem="E68-ie-LtZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="rhG-Rp-eqg"/>
-                            <constraint firstItem="Syc-Pf-QJE" firstAttribute="top" secondItem="yPt-oH-UmA" secondAttribute="bottom" constant="12" id="tqV-R7-YdJ"/>
-                            <constraint firstItem="13j-PC-EDD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="63" id="tx4-D1-FeJ"/>
+                            <constraint firstItem="X9T-xi-KM3" firstAttribute="top" secondItem="byb-a5-xzM" secondAttribute="bottom" id="Ay3-Mz-zG3"/>
+                            <constraint firstItem="X9T-xi-KM3" firstAttribute="height" secondItem="byb-a5-xzM" secondAttribute="height" id="BVA-69-q8j"/>
+                            <constraint firstItem="byb-a5-xzM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KCT-zh-X8z"/>
+                            <constraint firstItem="X9T-xi-KM3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QkG-oT-LUx"/>
+                            <constraint firstItem="X9T-xi-KM3" firstAttribute="top" secondItem="byb-a5-xzM" secondAttribute="bottom" id="SiI-K2-kEf"/>
+                            <constraint firstItem="byb-a5-xzM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XIa-Ur-eKg"/>
+                            <constraint firstItem="X9T-xi-KM3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="e3d-jD-NSG"/>
+                            <constraint firstItem="byb-a5-xzM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iXA-TM-Onz"/>
+                            <constraint firstItem="X9T-xi-KM3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sKZ-Ie-YWZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
